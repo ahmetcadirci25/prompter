@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Ücretsiz Online Prompter Programı</title>
+		<meta name="description" content="Tüm işletim sistemlerinde (Windows, iOS, Android, Mac OS, vb.) Ve PC'ler, dizüstü bilgisayarlar, tabletler, telefonlar ve daha pek çok cihazda çalışan ücretsiz web tabanlı prompter." />
+
+		<!-- Mobile Specific Meta Tags -->
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css?v=0.6.1">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/Blob.js"></script>
+		<script type="text/javascript" src="js/FileSaver.min.js"></script>
+	</head>
+	<body id="gui">
+		<header>
+			<!--<h1><i class="icon icon-bullhorn"></i> <span class="clock">00:00:00</span></h1>-->
+			<h1><span class="clock">00:00:00</span></h1>
+			<nav>
+                <div class="buttons">
+					<a class="button small icon-undo reset" href="#" onclick="return false;"></a>
+					<a class="button small icon-text-width flipx" href="#" onclick="return false;"></a>
+					<a class="button small icon-text-height flipy" href="#" onclick="return false;"></a>
+					<a class="button icon-play play active" href="#" onclick="return false;"></a>
+					<a class="button small extra-open glyphicon glyphicon-folder-open" href="#" onclick="return false;"></a>
+					<a class="button small extra-save glyphicon glyphicon-floppy-save" href="#" onclick="return false;"></a>
+				</div>
+				<div class="sliders">
+					<label class="font_size_label">Yazı Boyutu <span>(60)</span>:&nbsp; <div class="font_size slider"></div></label><br>
+					<label class="speed_label">Hız <span>(35)</span>:&nbsp; <div class="speed slider"></div></label>
+				</div>
+                <div class="colors">
+                    <input id="text-color-picker" class="color {hash:true,caps:true,valueElement:'text-color'}"><input type="hidden" id="text-color" value="#ffffff">
+                    <input id="background-color-picker" class="color {hash:true,caps:true,valueElement:'background-color'}"><input type="hidden" id="background-color" value="#141414">
+                </div>
+			</nav>
+		</header>
+		<article>
+			<div class="overlay">
+				<div class="top"></div>
+				<div class="bottom"></div>
+			</div>
+			<div class="teleprompter" id="teleprompter" contenteditable>
+				Tüm işletim sistemlerinde (Windows, iOS, Android, Mac OS, vb.) Ve PC'ler, dizüstü bilgisayarlar, tabletler, telefonlar ve daha pek çok cihazda çalışan ücretsiz web tabanlı prompter.
+				<br><br>
+				Prompter, kamera önüne yerleştirilerek, çekimi yapılan kimseye yazılı veya görüntülü hatırlatmalar yapan elektronik suflör. 
+				<br><br>
+				Tipik bir prompter, kamera altına yerleştirilmiş bir monitör ile kamera ve monitör arasına yerleştirilmiş ışın ayırıcı bir cam ekrandan oluşur.
+				<br><br>
+				 Monitörden gelen metin veya resimler kamera önündeki cam vasıtasıyla çekimi yapılan kişiye (örneğin bir sunucuya) yansıtılır. 				
+				<br><br>				
+				Klavye kısayolları şunlardır:
+				<br><br>
+				Yukarı Tuşu (Up): Yazı Boyutunu Artırır
+				<br><br>
+				Aşağı Tuşu (Down): Yazı Boyutunu Azaltır
+				<br><br>
+				Sol Tuş (Left): Prompter'ı Yavaşlatır
+				<br><br>
+				Sağ Tuş (Right):  Prompter'ı Hızlandırır
+				<br><br>
+				Boşluk Tuşu (Space):  Başla / Durdur
+				<br><br>
+				ESC Tuşu (Escape): Herşeyi Yeniden Başlatır
+			</div>
+			<i class="icon-play marker"></i>
+		</article>
+		<footer>
+
+		</footer>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js/jquery.timer.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+        <script src="js/jscolor.js"></script>
+		<script src="js/script.js?v=0.6.1"></script>
+
+		<script type="text/javascript">
+		  WebFontConfig = {
+		    google: { families: [ 'Open+Sans:400,600,700,800,300' ] }
+		  };
+		  (function() {
+		    var wf = document.createElement('script');
+		    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		    wf.type = 'text/javascript';
+		    wf.async = 'true';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(wf, s);
+		  })(); 
+		</script>
+	</body>
+</html>
