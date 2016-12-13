@@ -6,7 +6,7 @@ Tüm işletim sistemlerinde (Windows, iOS, Android, Mac OS, vb.) Ve PC'ler, diz�
 
 ---
 
-##### Klavye kısayolları şunlardır:
+## Klavye kısayolları şunlardır:
 
 **Yukarı Tuşu (Up):** Yazı Boyutunu Artırır
 
