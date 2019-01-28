@@ -321,7 +321,7 @@ $(".extra-save").click(function() {
 	$(".teleprompter p").each(function() {
 		text += $(this).text() + "\n";
 	});
-	var filename = prompt("What would you like to name this save?", "Teleprompter");
+	var filename = prompt("Bu birikime ne ad vermek istersiniz?", "Prompter");
 	saveAs(new Blob([text], {type: "text/plain;charset=utf-8"}), filename + ((filename.indexOf(".txt") == -1) ? ".txt" : ""));
 });
 

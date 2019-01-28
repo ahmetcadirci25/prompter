@@ -154,6 +154,13 @@
 		    var s = document.getElementsByTagName('script')[0];
 		    s.parentNode.insertBefore(wf, s);
 		  })(); 
+
+		  $("#teleprompter").bind("paste", function(e){
+		   	$("#teleprompter").empty();
+		    $("#teleprompter").text(e.originalEvent.clipboardData.getData('text'));
+		    e.stopPropagation();
+		    return false;
+		  } );
 		</script>
 	</body>
 </html>
